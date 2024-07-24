@@ -33,15 +33,15 @@ router.post('/:cid/product/:pid', async (req, res) => {
     }
 })
 
-router.put('/:pid', async(req,res) => {
-    const id = req.params.pid
-    const updateCart = req.body
-    res.status(200).send(await manager.updateCart(id, updateCart))
-})
+// router.put('/:pid', async(req,res) => {
+//     const id = req.params.pid
+//     const updateCart = req.body
+//     res.status(200).send(await manager.updateCart(id, updateCart))
+// })
 
-router.delete('/:pid', async(req,res) => {
-    const id = req.params.pid
-    res.status(200).send(await manager.deleteCart(id))
-})
+// router.delete('/:pid', async(req,res) => {
+//     const id = req.params.pid
+//     res.status(200).send(await manager.deleteCart(id))
+// })
 
 export default router
